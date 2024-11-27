@@ -1,0 +1,74 @@
+/* Reset Styles */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  /* Navbar Styles */
+  #navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .menu li {
+    margin: 0 15px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .menu a:hover {
+    color: #ff9800;
+    transform: scale(1.1);
+  }
+  
+  /* Navbar Style on Scroll */
+  #navbar.scrolled {
+    background-color: lightblue;
+  }
+  
+  /* Content Sections */
+  .content {
+    padding-top: 60px; /* Offset for fixed navbar */
+  }
+  
+  section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  #home{
+    background-color: rgb(255, 200, 150);
+    color:black;
+  }
+  #about{
+    background-color:#a5ff3e;
+    color:black;
+  }
+  #services{
+    background-color: orangered;
+    color: #fff;
+  }
+  #contact{
+    background-color: #444;
+    color: #fff;
+  }
